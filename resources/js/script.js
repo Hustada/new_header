@@ -32,7 +32,11 @@ $(document).ready(function() {
     $('.js--scroll-to-book').click(function () {
        $('html, body').animate({scrollTop: $('.js--section-order').offset().top}, 1000); 
     });
-       
+    
+
+    $('.js--scroll-to-contact').click(function () {
+       $('html, body').animate({scrollTop: $('.js--section-contact').offset().top}, 1000); 
+    });   
     
     /* Navigation scroll */
     $(function() {

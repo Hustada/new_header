@@ -24,6 +24,8 @@ h3 {
 
 /* set universal shit like fonts and stuff */
 
+footer {overflow:hidden;}
+
 html {
 	color: #555;
 	font-family: 'Lato', 'Arial', sans-serif;
@@ -55,26 +57,6 @@ section {
     visibility: hidden;
 }
 
-
-/* reusable components */
-@keyframes pulse_animation {
-	0% { transform: scale(1); }
-	30% { transform: scale(1); }
-	40% { transform: scale(1.08); }
-	50% { transform: scale(1); }
-	60% { transform: scale(1); }
-	70% { transform: scale(1.05); }
-	80% { transform: scale(1); }
-	100% { transform: scale(1); }
-};
-
-.pulse {
-	animation-name: pulse_animation;
-	animation-duration: 5000ms;
-	transform-origin:70% 70%;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-}
 
 /* Paragraphs */
 
@@ -156,6 +138,7 @@ h1 {
 	word-spacing: 3px;
 	margin-bottom: 20px;
 }
+
 
 /* Nav */
 
@@ -451,6 +434,44 @@ cite {
 .buy-cart {
 	margin-bottom: 5px;
 }
+
+
+/* ----------------------------------------------- */
+/* CONTACT*/
+/* ----------------------------------------------- */
+
+.section-contact {
+	margin: 0 auto;
+	padding-bottom: 120px;
+}
+
+.contact-box {
+	text-align: center;
+}
+
+.email {
+	text-decoration: none;
+	margin-top: 55px;
+	word-spacing: 3px;
+}
+
+.email:link,
+.email:visited {
+	color: #c0392b;
+	border-bottom: 2px solid #c0392b;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.email:hover,
+.email:active {
+    border-bottom: 2px solid #c0392b;
+}
+
 
 
 /* ----------------------------------------------- */
